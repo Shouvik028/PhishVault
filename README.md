@@ -15,4 +15,3 @@ PhishVault is an intelligent, machine learning-powered solution to detect and bl
 
 > Secure your digital communications and stay ahead of evolving phishing threats with **PhishVault**.
 
----
