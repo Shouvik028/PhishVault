@@ -18,29 +18,28 @@ PhishVault is an intelligent, machine learning-powered solution to detect and bl
 ## 📂 Inputs
 
 - **CSV files of phishing and legitimate URLs:**  
-  - `verified_online.csv` &rarr; phishing website URLs from [phishtank.org](https://phishtank.org)  
-  - `tranco_list.csv` &rarr; legitimate website URLs from [tranco-list.eu](https://tranco-list.eu)
+  - `verified_online.csv` → phishing website URLs from [phishtank.org](https://phishtank.org)  
+  - `tranco_list.csv` → legitimate website URLs from [tranco-list.eu](https://tranco-list.eu)
 
 ---
 
 ## 🛠️ General Workflow
 
-1. Use CSV files to load URLs.
-2. Send a request to each URL using Python’s `requests` library.
-3. Parse the response content with BeautifulSoup.
-4. Extract features and create a numerical vector for each website.
-5. Repeat extraction for all URLs and build a structured DataFrame.
-6. Add a label: `1` for phishing, `0` for legitimate.
-7. Save as CSV: see `structured_data_legitimate.csv` and `structured_data_phishing.csv`.
-8. Combine and split data for training/testing (see `machine_learning.py` for examples).
-9. Implemented ML models:
-   - Support Vector Machine
-   - Gaussian Naive Bayes
-   - Decision Tree
-   - Random Forest
-   - AdaBoost
-10. Evaluate with confusion matrix and performance metrics (accuracy, precision, recall).
-11. Visualize all results—Naive Bayes performed best in testing.
+1. **Load URLs:** Use CSV files to load phishing and legitimate website URLs.
+2. **Request & Parse:** Send a request to each URL using Python’s `requests` library, and parse the response content with BeautifulSoup.
+3. **Feature Extraction:** Extract content-based features (e.g., HTML tag statistics) and create a numerical vector for each website.
+4. **Build DataFrame:** Repeat feature extraction for all URLs and build a structured DataFrame.
+5. **Label Data:** Add a label: `1` for phishing, `0` for legitimate.
+6. **Save Structured Data:** Save as CSV files. See `structured_data_legitimate.csv` and `structured_data_phishing.csv`.
+7. **Data Preparation:** Combine the structured data for training/testing (see `machine_learning.py` for examples).
+8. **Model Training:** Train models including:
+    - Support Vector Machine
+    - Gaussian Naive Bayes
+    - Decision Tree
+    - Random Forest
+    - AdaBoost
+9. **Evaluation:** Evaluate with confusion matrix and performance metrics (accuracy, precision, recall).
+10. **Visualization:** Visualize all results—Naive Bayes performed best in testing.
 
 ---
 
