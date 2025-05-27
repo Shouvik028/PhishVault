@@ -4,7 +4,7 @@
 
 PhishVault is an intelligent, machine learning-powered solution to detect and block phishing attacks. As cyber threats become more sophisticated, PhishVault helps protect your sensitive information from malicious websites and emails.
 
----
+
 
 ## ⚡ Key Features
 
@@ -13,7 +13,7 @@ PhishVault is an intelligent, machine learning-powered solution to detect and bl
 - 🚀 **Fast & Accurate:** Delivers rapid, reliable detection with resource-efficient processing.
 - 🛡️ **Scalable Protection:** Suitable for individuals and organizations, adaptable to a range of security needs.
 
----
+
 
 ## 📂 Inputs
 
@@ -21,5 +21,5 @@ PhishVault is an intelligent, machine learning-powered solution to detect and bl
   - `verified_online.csv` → phishing website URLs
   - `tranco_list.csv` → legitimate website URLs 
 
----
+
 
